@@ -6,7 +6,7 @@ import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import Seo from '../components/common/Seo';
 import { useProducts } from '../context/ProductsContext';
 import LazyImage from '../components/ui/LazyImage';
-import { asset, waLink } from '../config/site';
+import { asset, waLink, absoluteUrl } from '../config/site';
 
 function ProductDetails() {
   const { slug } = useParams();
@@ -27,14 +27,14 @@ function ProductDetails() {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'name': product.name,
-    'image': `https://sairampalakova.com/palakova_project/${product.image}`,
+    'image': absoluteUrl(`/${product.image.replace(/^\//, '')}`),
     'description': product.description,
     'offers': {
       '@type': 'Offer',
       'price': product.price,
       'priceCurrency': 'INR',
       'availability': 'https://schema.org/InStock',
-      'url': `https://sairampalakova.com/palakova_project/products/${product.slug}`
+      'url': absoluteUrl(`/products/${product.slug}`)
     },
     'brand': {
       '@type': 'Brand',

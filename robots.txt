@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sairampalakova.netlify.app/sitemap.xml
+Sitemap: https://sairampalakova.com/sitemap.xml

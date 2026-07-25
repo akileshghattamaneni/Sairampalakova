@@ -31,27 +31,20 @@ function ContactPage() {
     setSubmitting(true);
     setStatus({ message: '', type: '' });
 
-    try {
-      const formData = new FormData(form);
-      const res = await fetch('/', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: new URLSearchParams(formData).toString(),
-      });
+    const enquiryText = [
+      'Contact enquiry from website',
+      `Name: ${name}`,
+      `Mobile: ${mobile}`,
+      `Subject: ${subject}`,
+      '',
+      message,
+    ].join('\n');
 
-      if (res.ok) {
-        setStatus({ message: 'Thank you! We will reach out shortly.', type: 'success' });
-        showToast('Message sent! We will contact you via phone/WhatsApp.', 'success');
-        form.reset();
-      } else {
-        throw new Error('Netlify form submission failed');
-      }
-    } catch {
-      setStatus({ message: 'Unable to send. Please WhatsApp us directly.', type: 'danger' });
-      showToast('Unable to send. Please WhatsApp us directly.', 'error');
-    } finally {
-      setSubmitting(false);
-    }
+    window.open(waLink(enquiryText), '_blank', 'noopener,noreferrer');
+    setStatus({ message: 'Opening WhatsApp — send the message to complete your enquiry.', type: 'success' });
+    showToast('WhatsApp opened with your enquiry. Tap Send to reach us.', 'success');
+    form.reset();
+    setSubmitting(false);
   };
 
   return (

@@ -12,7 +12,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import Seo from '../components/common/Seo';
 import { FEATURES } from '../data/content';
-import { SITE, asset, waLink } from '../config/site';
+import { SITE, asset, waLink, absoluteUrl } from '../config/site';
 
 function HomePage() {
   const { products } = useProducts();
@@ -45,15 +45,15 @@ function HomePage() {
           '@context': 'https://schema.org',
           '@type': 'FoodBusiness',
           'name': 'Sai Ram PalaKova',
-          'image': 'https://sairampalakova.com/palakova_project/assets/images/sweet_kova.jpg',
+          'image': absoluteUrl('/assets/images/sweet_kova.jpg'),
           'priceRange': '$$',
-          'telephone': '+918187007374',
+          'telephone': SITE.phone,
           'address': {
             '@type': 'PostalAddress',
-            'streetAddress': 'Gattamaneni Nilayam',
-            'addressLocality': 'Nellore',
+            'streetAddress': SITE.address,
+            'addressLocality': 'Nayudupeta',
             'addressRegion': 'Andhra Pradesh',
-            'postalCode': '524001',
+            'postalCode': '524126',
             'addressCountry': 'IN'
           },
           'geo': {
@@ -61,7 +61,7 @@ function HomePage() {
             'latitude': '13.951317',
             'longitude': '79.872303'
           },
-          'url': 'https://sairampalakova.com/palakova_project/'
+          'url': absoluteUrl('/')
         }}
       />
       

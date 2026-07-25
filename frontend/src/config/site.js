@@ -1,4 +1,4 @@
-/** Site config — synced with includes/config.php */
+/** Site-wide business settings for the static SPA */
 export const SITE = {
   businessName: 'Sai Ram PalaKova',
   phone: '+918187007374',
@@ -19,4 +19,12 @@ export function asset(path) {
 
 export function waLink(text = 'Hello, I want to order Palakova') {
   return `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(text)}`;
+}
+
+/** Absolute URL on the live site (for JSON-LD, sitemaps). Path may be `/about` or `assets/...`. */
+export function absoluteUrl(path = '/') {
+  const origin = SITE.siteUrl.replace(/\/$/, '');
+  if (!path || path === '/') return `${origin}/`;
+  const normalized = path.startsWith('/') ? path : `/${path}`;
+  return `${origin}${normalized}`;
 }
