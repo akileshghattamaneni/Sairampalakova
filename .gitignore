@@ -1,0 +1,25 @@
+# Dependencies
+frontend/node_modules/
+node_modules/
+
+# Build / cache
+frontend/dist/
+dist/
+.vite/
+*.log
+npm-debug.log*
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# PHP / local (if present)
+includes/config.local.php

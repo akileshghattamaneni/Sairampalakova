@@ -1,0 +1,21 @@
+{
+  "name": "Sai Ram PalaKova",
+  "short_name": "Sai Ram",
+  "description": "Pure buffalo milk Palakova and milk products from Nellore.",
+  "start_url": "/palakova_project/",
+  "display": "standalone",
+  "background_color": "#FFFCF7",
+  "theme_color": "#5C1520",
+  "icons": [
+    {
+      "src": "/palakova_project/assets/images/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/palakova_project/assets/images/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

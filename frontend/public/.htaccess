@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /palakova_project/
+  RewriteRule ^api/ - [L]
+  RewriteRule ^admin/ - [L]
+  RewriteRule ^assets/ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /palakova_project/index.html [L]
+</IfModule>

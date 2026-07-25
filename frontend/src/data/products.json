@@ -1,0 +1,77 @@
+[
+  {
+    "id": 1,
+    "name": "Sweetless Kova",
+    "slug": "sweetless-kova",
+    "category": "kova",
+    "price": 175,
+    "weight": "500g",
+    "description": "Pure buffalo milk kova without added sugar, slow-cooked for a rich and authentic taste.",
+    "highlights": [
+      "100% pure buffalo milk",
+      "No added sugar",
+      "Traditional wood-fire texture"
+    ],
+    "image": "assets/images/sweetless_palakova.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Sweet Kova",
+    "slug": "sweet-kova",
+    "category": "kova",
+    "price": 150,
+    "weight": "500g",
+    "description": "Classic sweet Palakova prepared on kattela poyyi using slow stirring and fresh milk.",
+    "highlights": [
+      "Traditional village recipe",
+      "Daily fresh batches",
+      "Rich, creamy texture"
+    ],
+    "image": "assets/images/sweet_kova.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Ginni Kova",
+    "slug": "ginni-kova",
+    "category": "kova",
+    "price": 180,
+    "weight": "500g",
+    "description": "Hand-shaped Ginni Kova, a festive favourite crafted with slow-cooked milk and care.",
+    "highlights": [
+      "Festive favourite",
+      "Hand-shaped premium finish",
+      "Perfect for celebrations"
+    ],
+    "image": "assets/images/ginni-kova.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Pure Ghee",
+    "slug": "pure-ghee",
+    "category": "ghee",
+    "price": 400,
+    "weight": "500g",
+    "description": "Golden, fragrant ghee made from fresh buffalo milk with a rich village-style aroma.",
+    "highlights": [
+      "Freshly prepared",
+      "Rich aroma",
+      "Ideal for daily cooking"
+    ],
+    "image": "assets/images/ghee.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Fresh Paneer",
+    "slug": "fresh-paneer",
+    "category": "paneer",
+    "price": 250,
+    "weight": "500g",
+    "description": "Soft and fresh paneer made from pure milk, perfect for curries and snacks.",
+    "highlights": [
+      "Soft texture",
+      "Freshly prepared daily",
+      "Ideal for home cooking"
+    ],
+    "image": "assets/images/Paneer.jpg"
+  }
+]
