@@ -1145,6 +1145,12 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); color: var(--maroon); lin
 .footer-links li, .footer-contact-list li { margin-bottom: 0.5rem; }
 .footer-links a { color: rgba(250,243,228,0.8); transition: color 0.25s; }
 .footer-links a:hover { color: var(--gold-light); }
+.footer-social {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.65rem;
+}
 .footer-social a {
   width: 40px; height: 40px;
   border-radius: 50%;
@@ -1153,7 +1159,7 @@ h1, h2, h3, h4, h5 { font-family: var(--font-display); color: var(--maroon); lin
   display: inline-flex;
   align-items: center; justify-content: center;
   color: var(--gold-light);
-  margin-right: 0.5rem;
+  flex-shrink: 0;
   transition: transform 0.25s, background 0.25s;
 }
 .footer-social a:hover { background: var(--gold); color: var(--maroon-deep); transform: translateY(-3px); }
