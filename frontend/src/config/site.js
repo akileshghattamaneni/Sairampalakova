@@ -1,8 +1,8 @@
 /** Site-wide business settings for the static SPA */
 export const SITE = {
   businessName: 'Sai Ram PalaKova',
-  phone: '+918187007374',
-  whatsapp: '918187007374',
+  phone: '+919032537686',
+  whatsapp: '919032537686',
   siteUrl: 'https://sairampalakova.com',
   instagram: 'https://www.instagram.com/sairampalakova/',
   youtube: 'https://www.youtube.com/@bharanighattamaneni9808',
