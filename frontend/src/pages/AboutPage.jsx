@@ -64,7 +64,7 @@ function AboutPage() {
               </p>
             </div>
             <div className="story-visual">
-              <LazyImage src={asset('assets/images/sweet_kova.jpg')} alt="Traditional PalaKova" />
+              <LazyImage src={asset('assets/images/our_story.jpg')} alt="Traditional PalaKova" />
             </div>
           </div>
         </div>
