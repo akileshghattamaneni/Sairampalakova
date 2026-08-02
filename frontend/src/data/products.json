@@ -4,7 +4,7 @@
     "name": "Sweetless Kova",
     "slug": "sweetless-kova",
     "category": "kova",
-    "price": 175,
+    "price": 174,
     "weight": "500g",
     "description": "Pure buffalo milk kova without added sugar, slow-cooked for a rich and authentic taste.",
     "highlights": [
@@ -19,7 +19,7 @@
     "name": "Sweet Kova",
     "slug": "sweet-kova",
     "category": "kova",
-    "price": 150,
+    "price": 149,
     "weight": "500g",
     "description": "Classic sweet Palakova prepared on kattela poyyi using slow stirring and fresh milk.",
     "highlights": [
@@ -34,7 +34,7 @@
     "name": "Ginni Kova",
     "slug": "ginni-kova",
     "category": "kova",
-    "price": 180,
+    "price": 179,
     "weight": "500g",
     "description": "Hand-shaped Ginni Kova, a festive favourite crafted with slow-cooked milk and care.",
     "highlights": [
@@ -49,7 +49,7 @@
     "name": "Pure Ghee",
     "slug": "pure-ghee",
     "category": "ghee",
-    "price": 400,
+    "price": 399,
     "weight": "500g",
     "description": "Golden, fragrant ghee made from fresh buffalo milk with a rich village-style aroma.",
     "highlights": [
@@ -64,7 +64,7 @@
     "name": "Fresh Paneer",
     "slug": "fresh-paneer",
     "category": "paneer",
-    "price": 250,
+    "price": 249,
     "weight": "500g",
     "description": "Soft and fresh paneer made from pure milk, perfect for curries and snacks.",
     "highlights": [

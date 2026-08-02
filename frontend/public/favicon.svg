@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Outer Golden Ring -->
+  <circle cx="256" cy="256" r="236" fill="none" stroke="#C9A227" stroke-width="24" />
+  
+  <!-- Stylized Milk Droplet (Cream filled with Brown stroke) -->
+  <path d="M256,80 C165,195 145,315 205,385 C235,420 277,420 307,385 C367,315 347,195 256,80 Z" fill="#FAF3E4" stroke="#6B4423" stroke-width="12" stroke-linejoin="round" />
+  
+  <!-- Serif "S" Monogram (Brown) -->
+  <path d="M256,170 C230,170 215,182 215,200 C215,225 245,235 260,245 C280,258 290,275 290,295 C290,325 265,340 235,340 C210,340 190,328 185,310 L207,305 C210,315 220,322 233,322 C247,322 263,312 263,295 C263,275 240,265 220,252 C200,240 187,222 187,200 C187,175 213,152 249,152 C270,152 287,162 293,178 L273,185 C270,175 263,170 256,170 Z" fill="#6B4423" />
+</svg>
