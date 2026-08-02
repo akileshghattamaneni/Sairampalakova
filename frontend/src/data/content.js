@@ -41,7 +41,7 @@ export const GALLERY_IMAGES = [
   'ginni-kova.jpg',
   'ghee.jpg',
   'Paneer.jpg',
-  'sweet_kova.jpg',
+  'our_story.jpg',
 ];
 
 export const ABOUT_GALLERY = [
@@ -50,7 +50,7 @@ export const ABOUT_GALLERY = [
   ['ginni-kova.jpg', 'Ginni Kova'],
   ['ghee.jpg', 'Golden Ghee'],
   ['Paneer.jpg', 'Fresh Paneer'],
-  ['sweet_kova.jpg', 'Daily preparation'],
+  ['our_story.jpg', 'Daily preparation'],
 ];
 
 export const STATS = [
