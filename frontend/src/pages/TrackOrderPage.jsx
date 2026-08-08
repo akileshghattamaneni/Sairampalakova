@@ -3,6 +3,7 @@ import Seo from '../components/common/Seo';
 import { usePageMeta } from '../hooks/usePageMeta';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { waLink } from '../config/site';
+import PageHeroPremium from '../components/layout/PageHeroPremium';
 
 function TrackOrderPage() {
   usePageMeta('Track Your Order', 'Track your Sai Ram PalaKova order status using your mobile number.');
@@ -39,7 +40,7 @@ function TrackOrderPage() {
         keywords="track palakova order, order status"
         canonical="/track-order"
       />
-      <section className="page-hero-premium">
+      <PageHeroPremium image="assets/images/ghee.jpg">
         <div className="container">
           <div className="reveal">
             <div className="hero-eyebrow mb-3">
@@ -51,7 +52,7 @@ function TrackOrderPage() {
             <p className="page-subtitle">Enter the mobile number used when placing your order.</p>
           </div>
         </div>
-      </section>
+      </PageHeroPremium>
 
       <section className="section-pad-sm">
         <div className="container">

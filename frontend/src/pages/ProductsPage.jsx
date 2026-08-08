@@ -9,7 +9,8 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import { productTags } from '../data/content';
 import categories from '../data/categories.json';
-import { waLink } from '../config/site';
+import DeliveryInfoSection from '../components/sections/DeliveryInfoSection';
+import PageHeroPremium from '../components/layout/PageHeroPremium';
 
 function ProductsPage() {
   const { products, loading } = useProducts();
@@ -39,7 +40,7 @@ function ProductsPage() {
         keywords="buy palakova online, sweetless kova, ginni kova, pure ghee, fresh paneer"
         canonical="/products"
       />
-      <section className="page-hero-premium">
+      <PageHeroPremium image="assets/images/sweetless_palakova.jpg">
         <div className="container">
           <div className="row align-items-end gy-4">
             <div className="col-lg-8 reveal-left">
@@ -59,7 +60,7 @@ function ProductsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </PageHeroPremium>
 
       <section className="section-pad">
         <div className="container">
@@ -104,6 +105,12 @@ function ProductsPage() {
               })}
             </div>
           </div>
+
+          <p className="delivery-info-shop-note reveal mb-4">
+            Listed prices are for <strong>local delivery</strong> in Nellore, Nayudupeta &amp; nearby. Outstation cities — bulk orders of <strong>5 kg+</strong>.
+          </p>
+
+          <DeliveryInfoSection className="mb-4" />
 
           <motion.div layout className="row g-4 products-grid" id="productsGrid">
             <AnimatePresence mode="popLayout">
@@ -154,21 +161,6 @@ function ProductsPage() {
               )}
             </AnimatePresence>
           </motion.div>
-        </div>
-      </section>
-
-      <section className="section-pad-sm bg-cream-soft">
-        <div className="container">
-          <div className="festival-banner reveal">
-            <span className="festival-tag">Bulk Orders</span>
-            <h2 style={{ fontFamily: 'var(--font-display)', color: 'var(--gold-light)', fontSize: '2rem', marginBottom: '0.75rem' }}>Need a Large Order?</h2>
-            <p style={{ opacity: 0.9, maxWidth: 600, lineHeight: 1.7, marginBottom: '1.25rem' }}>
-              Weddings, festivals, or sweet shop supply — contact us on WhatsApp for custom quantities and pricing.
-            </p>
-            <a href={waLink('Bulk order enquiry')} className="btn btn-gold" target="_blank" rel="noopener noreferrer">
-              WhatsApp for Bulk
-            </a>
-          </div>
         </div>
       </section>
     </>

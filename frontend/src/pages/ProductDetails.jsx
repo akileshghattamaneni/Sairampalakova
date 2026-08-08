@@ -6,6 +6,7 @@ import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import Seo from '../components/common/Seo';
 import { useProducts } from '../context/ProductsContext';
 import LazyImage from '../components/ui/LazyImage';
+import PageHeroPremium from '../components/layout/PageHeroPremium';
 import { asset, waLink, absoluteUrl } from '../config/site';
 
 function ProductDetails() {
@@ -51,7 +52,7 @@ function ProductDetails() {
         canonical={`/products/${product.slug}`}
         schema={productSchema}
       />
-      <section className="page-hero-premium">
+      <PageHeroPremium image={product.image}>
         <div className="container">
           <div className="row align-items-center gy-4">
             <div className="col-lg-7 reveal-left">
@@ -66,18 +67,29 @@ function ProductDetails() {
             </div>
           </div>
         </div>
-      </section>
+      </PageHeroPremium>
 
       <section className="section-pad">
         <div className="container">
-          <div className="row gy-5 align-items-center">
+          <div className="row gy-4 gy-lg-5 align-items-stretch">
             <div className="col-lg-6 reveal-left">
-              <LazyImage src={asset(product.image)} alt={product.name} className="rounded-4 shadow" style={{ borderRadius: '24px' }} />
+              <div className="product-detail-showcase">
+                <div className="product-detail-image-frame">
+                  <LazyImage
+                    src={asset(product.image)}
+                    alt={product.name}
+                    className="product-detail-image"
+                    eager
+                  />
+                </div>
+              </div>
             </div>
             <div className="col-lg-6 reveal-right">
-              <div className="contact-card-lux">
-                <h2 className="section-title" style={{ textAlign: 'left', marginBottom: '1rem' }}>{product.name}</h2>
-                <p style={{ color: 'var(--text-muted)', lineHeight: 1.8 }}>{product.description}</p>
+              <div className="contact-card-lux product-detail-info">
+                <p className="product-detail-price mb-3">
+                  ₹{product.price} <span>/ {product.weight || '500g'}</span>
+                </p>
+                <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '1rem' }}>{product.description}</p>
                 <ul style={{ paddingLeft: '1.2rem', color: 'var(--text)', lineHeight: 2 }}>
                   {product.highlights?.map((point) => (
                     <li key={point}>{point}</li>

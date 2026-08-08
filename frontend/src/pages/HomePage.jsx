@@ -13,6 +13,7 @@ import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import Seo from '../components/common/Seo';
 import { FEATURES } from '../data/content';
 import { SITE, asset, waLink, absoluteUrl } from '../config/site';
+import DeliveryInfoSection from '../components/sections/DeliveryInfoSection';
 
 function HomePage() {
   const { products } = useProducts();
@@ -131,8 +132,10 @@ function HomePage() {
           <SectionHeader
             eyebrow="Catalog"
             title={<>Signature <span className="accent">Sweets</span></>}
-            subtitle="Prepared fresh daily using pure buffalo milk and slow wood-fire cooking."
+            subtitle="Prepared fresh daily using pure buffalo milk and slow wood-fire cooking. Prices below are for local delivery — see the guide for outstation bulk orders."
           />
+
+          <DeliveryInfoSection className="mb-4 mt-1" />
 
           {/* Category Filters */}
           <div className="d-flex justify-content-center gap-2 mb-4 flex-wrap reveal">

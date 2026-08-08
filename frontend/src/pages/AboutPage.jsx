@@ -6,6 +6,7 @@ import { usePageMeta } from '../hooks/usePageMeta';
 import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import Seo from '../components/common/Seo';
+import PageHeroPremium from '../components/layout/PageHeroPremium';
 import { ABOUT_GALLERY } from '../data/content';
 import { SITE, asset } from '../config/site';
 
@@ -29,7 +30,7 @@ function AboutPage() {
         keywords="about Sai Ram Palakova, traditional sweets, Nellore heritage"
         canonical="/about"
       />
-      <section className="page-hero-premium">
+      <PageHeroPremium image="assets/images/our_story.jpg">
         <div className="container">
           <div className="row align-items-center gy-3">
             <div className="col-lg-8 reveal-left">
@@ -46,7 +47,7 @@ function AboutPage() {
             </div>
           </div>
         </div>
-      </section>
+      </PageHeroPremium>
 
       <section className="section-pad">
         <div className="container">

@@ -5,6 +5,7 @@ import { useScrollReveal } from '../hooks/useScrollReveal';
 import { useGsapAnimations } from '../hooks/useGsapAnimations';
 import { useToast } from '../context/ToastContext';
 import { SITE, waLink } from '../config/site';
+import PageHeroPremium from '../components/layout/PageHeroPremium';
 
 function ContactPage() {
   usePageMeta('Contact Us — Orders & Enquiries', 'Call, WhatsApp, or message Sai Ram PalaKova for orders, bulk supply, and delivery enquiries in Nellore.');
@@ -56,18 +57,17 @@ function ContactPage() {
         canonical="/contact"
       />
       
-      {/* 1. Hero Header */}
-      <section className="page-hero-premium" style={{ padding: '2.5rem 0' }}>
+      <PageHeroPremium image="assets/images/sweet_kova.jpg">
         <div className="container">
           <div className="row align-items-center gy-3">
             <div className="col-lg-8 reveal-left">
               <div className="hero-eyebrow mb-2">
                 <span className="dot" /> We're Here to Help
               </div>
-              <h1 className="page-title" style={{ fontSize: '2.2rem', marginBottom: '0.5rem' }}>
+              <h1 className="page-title">
                 Contact <span className="text-saffron" style={{ fontStyle: 'italic' }}>Us</span>
               </h1>
-              <p className="page-subtitle mb-0" style={{ fontSize: '1rem' }}>Place bulk orders or ask any questions directly via WhatsApp or Form.</p>
+              <p className="page-subtitle mb-0">Place bulk orders or ask any questions directly via WhatsApp or Form.</p>
             </div>
             <div className="col-lg-4 reveal-right text-lg-end">
               <a href={waLink("Hello, I want to make an enquiry")} className="btn btn-saffron btn-md" target="_blank" rel="noopener noreferrer">
@@ -76,7 +76,7 @@ function ContactPage() {
             </div>
           </div>
         </div>
-      </section>
+      </PageHeroPremium>
 
       {/* 2. Classic Split Section */}
       <section className="section-pad bg-cream-soft">
